@@ -2,7 +2,7 @@
 
 This repo contains the scripts that crawl the reddit dataset used in paper [*Who Did They Respond to? Conversation Structure Modeling Using Masked Hierarchical Transformer*](https://arxiv.org/abs/1911.10666) by Henghui Zhu, Feng Nan, Zhiguo Wang, Ramesh Nallapati, and Bing Xiang in AAAI 2020.
 
-In order to get the dataset, one needs to register an application in Reddit and get clinet ID and screte. The details can be found [here](https://praw.readthedocs.io/en/latest/getting_started/authentication.html#password-flow). 
+In order to get the dataset, one needs to register an application in Reddit and get client ID and secret. The details can be found [here](https://praw.readthedocs.io/en/latest/getting_started/authentication.html#password-flow). 
 
 Then clone the repo using the following command.
 ```bash
