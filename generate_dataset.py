@@ -23,7 +23,6 @@ def get_response(reddit_id):
       result = comment.body
     except:
       pass
-
   elif reddit_id.startswith('t3'):
     try:
       comment = reddit.submission(id=reddit_id[3:])
@@ -35,7 +34,7 @@ def get_response(reddit_id):
 
 
 def build_dataset(input_csv, output_csv, dry_run=False):
-  reddit_df = pd.read_csv(input_csv)
+  reddit_df = pd.read_csv(input_csv).dropna()
   print(len(reddit_df))
   if dry_run:
     reddit_df = reddit_df[:100]
