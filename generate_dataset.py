@@ -44,6 +44,8 @@ def build_dataset(input_csv, output_csv, dry_run=False):
 
   for reddit_id in tqdm(reddit_ids):
     instance_text = get_response(reddit_id)
+    if instance_text: 
+      instance_text = instance_text.replace("\r", "\n") # Fix bug with broken rows in the dataframe
     all_text.append(instance_text)
 
   reddit_df['body'] = all_text
